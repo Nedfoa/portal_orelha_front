@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -34,7 +33,7 @@ body {
    LADO ESQUERDO
 ========================= */
 
-.cadastro {
+.login {
     width: 55%;
 
     padding: 72px 55px;
@@ -49,7 +48,7 @@ body {
 }
 
 
-.cadastro h1 {
+.login h1 {
     font-size: 28px;
     letter-spacing: 1px;
     margin-bottom: 35px;
@@ -105,7 +104,7 @@ body {
 
 /* BOTÃO CADASTRAR */
 
-.cadastro button {
+.login button {
     width: 260px;
     height: 36px;
 
@@ -132,7 +131,7 @@ body {
 }
 
 
-.cadastro button:hover {
+.login button:hover {
     transform: scale(1.03);
 }
 
@@ -157,8 +156,6 @@ body {
 
 
 .bem-vindo h1 {
-    font-family: Arial, sans-serif;
-
     font-size: 34px;
     letter-spacing: 1px;
 
@@ -176,12 +173,12 @@ body {
 
 /* LOGIN */
 
-.login {
+.cadastro {
     margin-top: 50px;
 }
 
 
-.login h2 {
+.cadastro h2 {
     font-size: 18px;
 
     letter-spacing: 1px;
@@ -189,14 +186,15 @@ body {
     margin-bottom: 18px;
 }
 
-.login button .login-link {
+.bem-vindo button .login-link {
     color: #5d4a43 !important;
     text-decoration: none !important;
 }
 
+
 /* BOTÃO */
 
-.login button {
+ button {
     width: 160px;
     height: 29px;
 
@@ -216,60 +214,7 @@ body {
 }
 
 
-.login button:hover {
+     button:hover {
     transform: scale(1.05);
 }
 
-
-/* DIVISOR OU */
-
-.ou {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 15px;
-
-    margin: 20px 0 27px;
-}
-
-
-.ou span {
-    width: 70px;
-    height: 2px;
-
-    background: linear-gradient(
-        90deg,
-        transparent,
-        #d8cfc0
-    );
-
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-
-
-.ou span:last-child {
-    background: linear-gradient(
-        90deg,
-        #d8cfc0,
-        transparent
-    );
-}
-
-
-.ou strong {
-    font-size: 12px;
-    color: #444;
-}
-
-
-/* LINK FUNCIONÁRIO */
-
-.login a {
-    color: #004a9f;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    text-decoration: underline;
-}
