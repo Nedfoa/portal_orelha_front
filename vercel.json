@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/cadastro-cliente/index.html",
+      "permanent": false
+    }
+  ]
+}
