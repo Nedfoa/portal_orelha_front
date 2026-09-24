@@ -63,7 +63,7 @@ const pets = [
 ];
 
 
-let petAtual = Number(localStorage.getItem("petSelecionado")) || 0;
+let petAtual = 0;
 
 
 const nomePet = document.getElementById("nomePet");
@@ -78,6 +78,23 @@ const imagemPet = document.getElementById("imagemPet");
 
 const informacaoContainer =
     document.querySelector(".informacao-container");
+
+
+
+
+/*Efeito de transição da tela */
+
+window.addEventListener("pageshow", function () {
+
+    const transicao = document.querySelector(".transicao-pagina");
+
+    if (transicao) {
+        transicao.classList.remove("ativa");
+    }
+
+});
+
+
 
 
 function mostrarPet() {
@@ -96,14 +113,24 @@ function mostrarPet() {
     imagemPet.alt = pet.nome;
 }
 
+document.getElementById("conhecerMais").addEventListener("click", function () {
+
+    localStorage.setItem("petSelecionado", petAtual);
+
+    const transicao = document.querySelector(".transicao-pagina");
+
+    transicao.classList.add("ativa");
+
+    setTimeout(function () {
+        window.location.href = "./detalhes_pet.html";
+    }, 500);
+
+});
+
 
 /* PRIMEIRO PET */
 
 mostrarPet();
-
-
-
-
 
 
 
