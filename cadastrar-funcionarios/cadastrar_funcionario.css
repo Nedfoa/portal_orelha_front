@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #700c0d;
+}
+
+
+
+.container {
+    width: 950px;
+    min-height: 570px;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+
+.cadastro {
+    width: 55%;
+    padding: 65px 55px;
+    background: linear-gradient(135deg, #b31216, #a40e12);
+    color: #f5f0ea;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.patinha-esquerda {
+    position: absolute;
+    left: -15px;
+    bottom: 15px;
+    font-size: 75px;
+    color: rgba(255, 255, 255, 0.06);
+    transform: rotate(-18deg);
+}
+
+
+
+.titulo-cadastro {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 34px;
+}
+
+.titulo-cadastro > i {
+    font-size: 40px;
+    color: #f5f0ea;
+}
+
+.titulo-cadastro h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.titulo-cadastro p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+input::placeholder {
+    color: #bdbdbd;
+    opacity: 1;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #f1ece5;
+    transition: 0.3s;
+}
+
+.campo:focus-within {
+    border-bottom-color: #ffffff;
+}
+
+.campo input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 6px;
+    color: white;
+    font-size: 14px;
+}
+
+.campo i {
+    font-size: 18px;
+    padding-right: 5px;
+    color: #f1ece5;
+}
+
+
+
+.cadastro button {
+    width: 260px;
+    height: 38px;
+    margin-top: 3px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 25px;
+    background: #f5f1ea;
+    color: #832020;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cadastro button i {
+    margin-right: 7px;
+}
+
+.cadastro button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+
+
+.bem-vindo {
+    width: 45%;
+    background: #f4efe6;
+    text-align: center;
+    padding-top: 35px;
+    color: #742621;
+    box-shadow: inset 8px 0 15px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.patinha-topo {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    font-size: 62px;
+    color: rgba(141, 41, 35, 0.13);
+    transform: rotate(15deg);
+}
+
+
+
+.titulo-bem-vindo {
+    position: relative;
+    z-index: 2;
+}
+
+.icone-coracao {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-coracao  {
+    font-size: 48px;
+    color: #8b2521;
+}
+
+.icone-coracao .fa-paw {
+    position: absolute;
+    font-size: 37px;
+    color: #8b2521;
+    top: 34px;
+}
+
+.bem-vindo h1 {
+    font-family: Arial, sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.bem-vindo p {
+    color: #555;
+    font-size: 15px;
+    line-height: 21px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.login {
+    margin-top: 43px;
+    position: relative;
+    z-index: 3;
+}
+
+.login h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+
+
+
+.login button {
+    width: 200px;
+    height: 38px;
+    border: none;
+    border-radius: 20px;
+    background: #bd362c;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login button i {
+    margin-left: 8px;
+}
+
+.login button:hover {
+    transform: translateY(-2px);
+    background: #8a1b13;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.coracao-direito {
+    position: absolute;
+    right: 38px;
+    bottom: 135px;
+    font-size: 42px;
+    color: #8b2521;
+    transform: rotate(-10deg);
+    z-index: 2;
+}
+
+.coracao-direito::before,
+.coracao-direito::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #8b2521;
+    top: 50%;
+}
+
+.coracao-direito::before {
+    right: 45px;
+    transform: rotate(-20deg);
+}
+
+.coracao-direito::after {
+    left: 45px;
+    transform: rotate(20deg);
+}
+
+
+
+.animais {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 330px;
+    height: 190px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.cachorro {
+    font-size: 145px;
+    line-height: 1;
+    transform: translateX(18px);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.12));
+}
+
+.gato {
+    font-size: 105px;
+    line-height: 1;
+    transform: translateX(-12px);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.12));
+}
+
+.patinha-baixo {
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+    font-size: 58px;
+    color: rgba(141, 41, 35, 0.08);
+    transform: rotate(-20deg);
+}
