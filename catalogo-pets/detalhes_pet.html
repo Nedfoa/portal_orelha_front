@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orelha | Pet</title>
+    <link rel="stylesheet" href="./detalhes_pet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<body>
+    
+
+        <header class="cabecalho">
+
+            <a href="#" class="logo">
+                <img src="../img/LogoSite.png" alt="Orelha">
+            </a>
+
+            <nav class="menu">
+
+                <a href="#">Início</a>
+                <a href="#">Perfil</a>
+                <a href="#">ONG</a>
+                <a href="#">Ajudar</a>
+                <a href="#" class="botao-adotar"><i class="fa-regular fa-heart"></i>Adotar</a>
+
+            </nav>
+
+        </header>
+
+        <main class="detalhes-pet">
+
+    <!-- Botão de voltar. "history.back()" volta de pra onde você -->
+    <button class="btn-voltar" onclick="history.back()">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+
+    <section class="pet-conteudo">
+
+        <div class="card-pet cachorro" onclick="abrirPet(0)">
+
+                <a href="favoritos.html" class="icone-coracao">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+
+                <div class="icone-pata">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+
+                <img id="imagemPet" src="" class="imagem-pet">
+                <div class="informacao-pet">
+                    <span id="nomePetCard"></span>
+                </div>  
+
+            </div>
+
+
+        <!-- INFORMAÇÕES -->
+        <div class="pet-informacoes">
+
+            <h1 id="nomePet"></h1>
+
+            <p class="descricao"> Hércules foi encontrado na rua com apenas 4 meses de idade, ainda muito pequeno e vulnerável. Mesmo sozinho, ele já demonstrava muita força e vontade de viver. Agora, ele espera por uma família que possa oferecer amor, cuidado e um lar seguro, onde finalmente possa crescer cercado de carinho e proteção. </p>
+
+
+            <div class="informacoes">
+
+                <span>
+                    <h4 id="tipoPet"></h4>
+                </span>
+
+                <span>•</span>
+
+                <span>
+                    <h4 id="sexoPet"></h4>
+                </span>
+
+                <span>•</span>
+
+                <span>
+                    <h4 id="idadePet"></h4>
+                </span>
+
+                <span>•</span>
+
+                <span>
+                    <h4 id="portePet"></h4>
+                </span>
+
+                <span>•</span>
+
+                <span>
+                    <h4>Castrado</h4>
+                </span>
+
+                <span>•</span>
+
+                <span>
+                    <h4>Vacinado</h4>
+                </span>
+
+            </div>
+
+
+            <!-- BOTÕES -->
+            <div class="acoes-pet">
+
+                <button class="btn-adotar">
+                    <i class="fa-solid fa-house"></i>
+                    Quero Adotar
+                </button>
+
+                <button class="btn-ajudar">
+                    <i class="fa-regular fa-heart"></i>
+                    Quero ajudar
+                </button>
+
+                <button class="btn-mensagem">
+                   <i class="fa-solid fa-comment"></i> 
+                </button>
+
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+</main>
+        <!--efeito da página-->>
+        <script>
+            window.addEventListener("load", function () {
+                document.body.classList.add("entrando");
+            });
+        </script>
+
+        <script src="./detalhes_pet.js"></script>
+</body>        
